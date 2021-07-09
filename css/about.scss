@@ -1,0 +1,273 @@
+@import "./index";
+
+// General Styling
+.tablet, .desktop {
+    display: none;
+}
+
+// Hero Styling
+.hero {
+    background-image: url('./../assets/about/mobile/image-hero-whitecup.jpg');
+    margin-bottom: 7.5rem;
+
+    &__paragraph {
+        margin: 0;
+        color: #F7FCFE;
+    }
+}
+
+// Commitment Section
+.commitment {
+    margin-bottom: 12.5rem;
+
+    &__img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 48px;
+        margin: 3rem 0 1.875rem;
+    }
+
+    &__paragraph {
+        color: #333D4B;
+        font-size: 0.9375rem;
+        line-height: 25px;
+    }
+}
+
+// Quality Section
+.quality {
+    border-radius: 10px;
+    background-color: #252b31;
+    color: #FEFCF7;
+    padding: 0 1.5rem 3.8125rem;
+    margin-bottom: 7.5rem;
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+        bottom: 4rem;
+    }
+
+    &__heading {
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__paragraph {
+        color: inherit;
+        line-height: 1.5625rem;
+    }
+}
+
+// Headquarters Section
+.hq {
+
+    &__heading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #83888F;
+        margin-bottom: 4.5rem;
+    }
+
+    &__headquarter {
+        margin-bottom: 5rem;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+
+        .country {
+            font-family: Fraunces, sans-serif;
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+            color: #333D4B;
+            font-weight: 900;
+        }
+
+        p {
+            margin-bottom: 0.3125rem;
+
+            &:first-of-type {
+                margin-top: 24px;
+            }
+        } 
+    }
+}
+
+// Tablet Styling
+@media all and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: initial;
+    }
+
+    // Hero Section - Tablet
+    .hero {
+        background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+        padding: 17% 33% 17% 8.3%; 
+    }
+    
+    // Commitment Section - Tablet
+    .commitment {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-auto-rows: 0.3fr 1fr;
+        column-gap: 50px;
+        text-align: left;
+        align-items: center;
+        margin-bottom: 18rem;
+
+        &__img {
+            max-width: 445px;
+            max-height: 520px;
+            grid-row: 1 / 3;
+            border-radius: 10px;
+            content: url('../assets/about/tablet/image-commitment.jpg');
+        }
+    
+        &__heading, &__paragraph {
+            grid-column: 2 / 3;
+        }
+    
+        &__heading {
+            align-self: center;
+        }
+
+        &__paragraph {
+            align-self: start;
+        }
+    }
+    
+    // Quality Section - Tablet
+    .quality {
+        padding: 33% 12% 12%;
+        position: relative;
+        
+    
+        &__img {
+            position: absolute;
+            left: 50%;
+            bottom: 65%;
+            transform: translate(-50%);
+            width: 80%;
+        }
+    }
+    
+    // Headquarters Section - Tablet
+    .hq {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+        column-gap: 30px;
+
+        &__heading {
+            grid-column: 1 / 4;
+            font-size: 1.5rem;
+        }
+
+        &__headquarter {
+            img {
+                margin: 0 0 3.125rem;
+            }
+
+            .country {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    // Footer - Tablet
+
+}
+
+// 1024px Laptop Styling
+@media all and (min-width: 1024px) {
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: initial;
+    }
+
+    // Hero Section - Laptop
+    .hero {
+        background-image: url('../assets/about/desktop/image-hero-whitecup.jpg');
+        background-position: center;
+        background-size: cover;
+        padding: 8.5rem 0 8.5rem 3.625rem;
+
+        &__main-heading, &__paragraph {
+            width: 40%;
+        }
+    }
+
+    // Commitment Section - Laptop
+    .commitment {
+        padding-inline: 5%;
+        column-gap: 90px;
+    }
+
+    // Quality Section - Laptop
+    .quality {
+        padding: 6% 6% 12%;
+        text-align: left;
+
+        &__img {
+            width: 33%;
+            max-width: 390px;
+            // right: 0;
+            transform: unset;
+            bottom: unset;
+            top: -65px;
+            right: 70px;
+            left: unset;
+        }
+
+        &__paragraph {
+            width: 50%;
+        }
+    }
+}
+
+
+// Desktop Styling
+@media all and (min-width: 1440px) {
+    body {
+        padding-inline: 12%;
+    }
+
+    // Hero Section - Desktop
+    .hero {
+        padding: 10.7% 58% 10.7% 6.6%;
+
+        &__main-heading, &__paragraph {
+            width: 100%;
+        }
+        &__main-heading {
+            font-size: 2.5rem;
+        }
+    }
+
+    // Commitment Section - Desktop
+    .commitment {
+        padding-inline: 10%;
+
+        &__heading {
+            font-size: 2.5rem;
+        }
+    }
+
+
+}
