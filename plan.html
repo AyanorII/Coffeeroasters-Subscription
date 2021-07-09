@@ -1,0 +1,263 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="css/css-reset.css">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/plan.css">
+
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+</head>
+
+<body class="">
+  <nav>
+    <div class="nav-container">
+      <img class="nav-brand logo" src="assets/shared/desktop/logo.svg" alt="">
+      <img id="menu-button" class="menu-button" src="assets/shared/mobile/icon-hamburger.svg" alt="">
+    </div>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-item">Home</a>
+      <a href="./about.html" class="nav-item">About us</a>
+      <a href="./plan.html" class="nav-item">Create your plan</a>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <h1 class="hero__main-heading">Create a plan</h1>
+    <p class="hero__paragraph">
+      Build a subscription plan that best fits your needs. We offer an assortment of the best
+      artisan coffees from around the globe delivered fresh to your door.
+    </p>
+  </section>
+
+  <section class="steps">
+
+    <div class="steps__item">
+      <span class="big-number">01</span>
+      <h2 class="steps__heading">Pick your coffee</h2>
+      <p class="steps__paragraph">
+        Select from our evolving range of artisan coffees. Our beans are ethically
+        sourced and we pay fair prices for them. There's new coffees in all profiles
+        every month for you to try out.
+      </p>>
+    </div>
+
+    <div class="steps__item">
+      <span class="big-number">02</span>
+      <h2 class="steps__heading">Choose the frequency</h2>
+      <p class="steps__paragraph">
+        Customize your order frequency, quantity, even your roast style and grind type.
+        Pause, skip or cancel your subscription with no commitment through our online portal.
+      </p>
+
+    </div>
+
+    <div class="steps__item">
+      <span class="big-number">03</span>
+      <h2 class="steps__heading">Receive and enjoy!</h2>
+      <p class="steps__paragraph">
+        We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+        world-class coffees curated to provide a distinct tasting experience.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="plan">
+    <!--*Only show at Desktop-->
+    <div id="desktop-plan-menu" class="desktop-plan-menu">
+      <a href="#how-drink"><span class="plan-menu-number">01</span> Preferences</a>
+      <a href="#type-of-coffee"><span class="plan-menu-number">02</span> Bean type</a>
+      <a href="#coffee-quantity"><span class="plan-menu-number">03</span> Quantity</a>
+      <a href="#grind"><span class="plan-menu-number">04</span> Grind option</a>
+      <a href="#frequency"><span class="plan-menu-number">05</span> Deliveries</a>
+    </div>
+
+    <div class="plan__item">
+      <div class="item-container">
+        <label for="how-drink">How do you drink your coffee?</label>
+        <button id="how-drink" class="plan__button"><img src="./assets/plan/desktop/icon-arrow.svg" alt=""></button>
+      </div>
+
+      <div class="plan__options">
+        <div class="plan__card">
+          <span class="plan__card-title">Capsule</span>
+          <p class="plan__card-paragraph">Compatible with Nespresso systems and similar brewers</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Filter</span>
+          <p class="plan__card-paragraph">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Espresso</span>
+          <p class="plan__card-paragraph">Dense and finely ground beans for an intense, flavorful experience</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan__item">
+      <div class="item-container">
+        <label for="type-of-coffee">What type of coffee?</label>
+        <button id="type-of-coffee" class="plan__button hide"><img src="./assets/plan/desktop/icon-arrow.svg"
+            alt=""></button>
+      </div>
+
+      <div class="plan__options hide">
+        <div class="plan__card">
+          <span class="plan__card-title">Single origin</span>
+          <p class="plan__card-paragraph">Distinct, high quality coffee from a specific family-owned farm</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Decaf</span>
+          <p class="plan__card-paragraph">Just like regular coffee, except the caffeine has been removed</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Blended</span>
+          <p class="plan__card-paragraph">Combination of two or three dark roasted beans of organic coffees</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan__item">
+      <div class="item-container">
+        <label for="coffee-quantity">How much would you like?</label>
+        <button id="coffee-quantity" class="plan__button hide"><img src="./assets/plan/desktop/icon-arrow.svg"
+            alt=""></button>
+      </div>
+
+      <div class="plan__options hide">
+        <div class="plan__card">
+          <span class="plan__card-title">250g</span>
+          <p class="plan__card-paragraph">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">500g</span>
+          <p class="plan__card-paragraph">Perfect option for a couple. Yields about 40 delectable cups.</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">1000g</span>
+          <p class="plan__card-paragraph">Perfect for offices and events. Yields about 90 delightful cups.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan__item">
+      <div class="item-container">
+        <label for="grind">Want us to grind them?</label>
+        <button id="grind" class="plan__button hide"><img src="./assets/plan/desktop/icon-arrow.svg" alt=""></button>
+      </div>
+
+      <div class="plan__options hide">
+        <div class="plan__card">
+          <span class="plan__card-title">Wholebean</span>
+          <p class="plan__card-paragraph">Best choice if you cherish the full sensory experience</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Filter</span>
+          <p class="plan__card-paragraph">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Cafetiére</span>
+          <p class="plan__card-paragraph">Course ground beans specially suited for french press coffee</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan__item">
+      <div class="item-container">
+        <label for="frequency">How often should we deliver?</label>
+        <button id="frequency" class="plan__button hide"><img src="./assets/plan/desktop/icon-arrow.svg" alt=""></button>
+      </div>
+
+      <div class="plan__options hide">
+        <div class="plan__card">
+          <span class="plan__card-title">Every week</span>
+          <p class="plan__card-paragraph">$14.00 per shipment. Includes free first-class shipping.</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Every 2 weeks</span>
+          <p class="plan__card-paragraph">$17.25 per shipment. Includes free priority shipping.</p>
+        </div>
+
+        <div class="plan__card">
+          <span class="plan__card-title">Every month</span>
+          <p class="plan__card-paragraph">$22.50 per shipment. Includes free priority shipping.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-summary-card">
+      <h4>Order Summary</h4>
+      <p id="order-summary">
+        “I drink coffee as <span class="how-drink-summary">_____</span>, with a <span
+          class="type-of-coffee-summary">_____</span> type of bean.
+        <span class="coffee-quantity-summary">_____</span> ground ala <span class="grind-summary">_____</span>,
+        sent to me <span class="frequency-summary">_____</span>.”
+      </p>
+    </div>
+
+    <button id="create-plan" class="create-plan-btn btn">Create my plan!</button>
+  </section>
+
+  <!-- Modal -->
+  <section id="modal" class="modal">
+    <span class="modal__main-span">Order Summary</span>
+
+    <p id="modal__order-summary" class="modal__order-summary">
+      “I drink coffee as <span class="how-drink-summary">_____</span>, with a <span
+        class="type-of-coffee-summary">_____</span> type of bean.
+      <span class="coffee-quantity-summary">_____</span> ground ala <span class="grind-summary">_____</span>,
+      sent to me <span class="frequency-summary">_____</span>.”
+    </p>
+
+    <p class="modal__confirmation">
+      Is this correct? You can proceed to checkout or go back to plan selection if something
+      is off. Subscription discount codes can also be redeemed at the checkout.
+    </p>
+
+
+    <button class="modal__button btn">Checkout - <span id="price">_____</span>/month</button>
+    <button id="change-order" class="modal__button btn">Change order</button>
+  </section>
+  <!-- End modal -->
+
+  <footer>
+    <img class="logo" src="assets/shared/desktop/logo-white.svg" alt="">
+
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About us</a>
+      <a href="./plan.html">Create your plan</a>
+    </div>
+    <div class="social-media-icons">
+      <a href="https://facebook.com"><img src="assets/shared/desktop/icon-facebook.svg" alt=""></a>
+      <a href="https://twitter.com/"><img src="assets/shared/desktop/icon-twitter.svg" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="assets/shared/desktop/icon-instagram.svg" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/plan.js"></script>
+</body>
+
+</html>
